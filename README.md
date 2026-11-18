@@ -6,7 +6,7 @@ FILE = "habits.json"
 
 def load_habits():
     if os.path.exists(FILE):
-        with open(FILE, "r", encoding="utf-8") as :
+        with open(FILE, "r", encoding="utf-8") as f :
             return json.load(f)
     return []
 
